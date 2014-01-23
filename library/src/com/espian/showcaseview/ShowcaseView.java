@@ -156,8 +156,8 @@ public class ShowcaseView extends RelativeLayout
             RelativeLayout.LayoutParams lps = getConfigOptions().buttonLayoutParams;
             if (lps == null) {
                 lps = (LayoutParams) generateDefaultLayoutParams();
-                lps.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-                lps.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                lps.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+                lps.addRule(RelativeLayout.CENTER_HORIZONTAL);
                 int margin = ((Number) (metricScale * 12)).intValue();
                 lps.setMargins(margin, margin, margin, margin);
             }
